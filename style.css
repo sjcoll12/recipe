@@ -1,0 +1,768 @@
+/* SITEWIDE - html, body, #wrapper*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
+html {
+   background: rgba(122, 191, 191, .5);
+}
+
+body {
+    font-family: 'Monserrat', sans-serif;
+    margin-top: 0;  
+    line-height: 1.5;
+}
+
+#wrapper {
+    background-color: #fff; 
+    width: 414px;
+    margin: 0 auto; 
+}
+/* FONT/PARAGRAPH/LIST STYLES -  h1, h2, h3, p, nav, ul, ol, li, a, dl, dt, dd */
+
+h1 {
+    font-size: 40px;
+    padding-top: 132px;
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h1, h2, h3 {
+    font-family: 'Bebas Neue', cursive;
+    margin: 0;
+}
+
+nav a, nav span, figcaption, menu li, button, #social li, footer {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+
+p, dd, li, nav, input {
+    font-family: 'Monserrat', sans-serif;
+    font-size: 16px;
+}
+
+dl {
+    margin: 0;
+    text-align: left;
+    display: inline-block;
+}
+
+dt {
+    font-weight: bold;
+    font-size: 16px;
+    
+}
+
+
+
+/* LAYOUT STYLES */
+
+article figure {
+    margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #EB5428;
+
+}
+
+#nav1 li {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    
+}
+
+#nav1 {
+    margin: 0;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 414px;
+    text-align: center;
+}
+nav ul {
+padding: 0;
+margin: 0;
+}
+
+#nav1 {
+    margin: 0;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 414px;
+    text-align: center;
+}
+
+menu li {
+    list-style: none;
+}
+
+aside {
+    background-color: #7ABFBF;
+    padding-bottom: 10px;
+}
+
+aside h2 {
+    text-align: center;
+    padding: 10px 0 20px 0;
+}
+
+/* IDs and CLASSES */
+
+#menuicon {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#homeicon {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#profileicon {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+#details, #ingredients, #directions {
+ text-align: center;
+} 
+
+#ingredients ul {
+    padding-left: 20px;
+}
+
+#ingredients li, #directions li  {
+    text-align: left;
+    padding-left: 10px;
+}
+
+#directions {
+    padding: 0;
+} 
+
+/* ASIDE */
+
+aside li ~ li {
+    font-weight: bold;
+}
+
+.dish1 {
+    display: grid;
+    grid-template-columns: .25fr 1fr;
+    grid-template-rows: .2fr .7fr .2fr;
+    grid-column-gap: 15px;
+    margin: 10px;
+    cursor:pointer;
+    }
+
+.dish1 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}   
+.rice1 {
+   
+    width: 120px;
+    height: auto;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    }
+    
+.rice2 {
+    
+    grid-column-start: 2;
+    grid-column-end: 3;   
+    }
+
+.dish2 {
+    display: grid;
+    grid-template-columns: .25fr 1fr;
+    grid-template-rows: .2fr .7fr .2fr;
+    grid-column-gap: 15px;
+    margin: 10px;
+    cursor:pointer;
+    }
+
+.dish2 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+
+.salsa1 {
+    width: 120px;
+    height: auto;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    }
+
+    .salsa2 {      
+        grid-column-start: 2;
+        grid-column-end: 3;  
+    }
+    
+    .dish3 {
+    display: grid;
+    grid-template-columns: .25fr 1fr;
+    grid-template-rows: .2fr .7fr .2fr;
+    grid-column-gap: 15px;
+    margin: 10px;
+    cursor:pointer;
+    }
+    .guacamole1 {
+        width: 120px;
+        height: auto;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .guacamole2 {
+        grid-column-start: 2;
+        grid-column-end: 3;  
+    }   
+    .dish3 ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .dish4 {
+        display: grid;
+        grid-template-columns: .25fr 1fr;
+        grid-template-rows: .2fr .7fr .2fr;
+        grid-column-gap: 15px;
+        margin: 10px;
+        cursor:pointer;
+        }   
+        .tortilla1 {
+            width: 120px;
+            height: auto;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+    
+.tortilla2{
+    grid-column-start: 2;
+    grid-column-end: 3;  
+        }
+
+.dish4 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+        }       
+
+#topnav {
+    position: fixed;
+    top: 0;
+    background-color:#fff;
+    z-index: 2;
+}
+
+#homeicon {
+    background-color: #EB5428;
+}
+
+#homeicon svg, #menuicon svg, #profileicon {
+    padding-top: 9.5px;
+}
+
+#social, #action {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#social a, #action a {
+    text-decoration: none;
+    color: #EB5428;
+} 
+
+#action li {
+    text-align: center;
+}
+
+
+#cheesi {
+    height: 200px;
+    max-width: 100%;
+    text-align: center;
+}
+
+#tacosimg {
+    width: 414px;
+    height: auto; 
+    padding-left: 0;
+    text-align: center;
+}
+
+.search {
+    display: flex;
+}
+  
+  .searchtext {
+    width: 350px;
+    border: 3px solid #EB5428;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    outline: none;
+}
+  
+  .searchbutton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #EB5428;
+    background: #EB5428;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .btnwrap {
+    
+    width: 300px;
+    position: fixed;
+    top: 0;
+    margin-top: 100px;
+    padding-left: 50px;
+ }
+  
+footer {
+    text-align: center;
+}
+
+/* TRANSITION LINKS */
+
+#action li, #social li, .dish1, .dish2, .dish3, .dish4   {
+    transition: background-color 2s;
+    }
+#action li:hover {
+      background-color:#ffb300;
+    }
+    
+#social li:hover {
+      background-color:#ffb300;
+    }
+
+.dish1:hover {
+      background-color:#ffb300;
+    }
+
+.dish2:hover {
+      background-color:#ffb300;
+    }
+
+.dish3:hover {
+      background-color:#ffb300;
+    }
+
+.dish4:hover {
+      background-color:#ffb300;
+    }
+
+    
+    #brunch:hover {
+      background-color:#ffb300;
+    }
+    
+    #lunch:hover {
+      background-color:#ffb300;
+    }
+
+    #dinner:hover {
+      background-color:#ffb300;
+    }
+
+    #appetizers:hover {
+      background-color:#ffb300;
+    }
+
+    #desserts:hover {
+      background-color:#ffb300;
+    }
+
+    #beverages:hover {
+      background-color:#ffb300;
+    }
+
+/* MEDIA QUERIES */
+
+@media (min-width: 414px){
+    #wrapper {
+        background-color: #fff; 
+        margin: 0 auto; 
+    }
+    .hide {
+        display: none;
+        height: 1px;
+    }
+   
+}
+
+@media (min-width: 768px) {
+    #wrapper {
+        background-color: #fff; 
+        width: 768px;
+        margin: 0 auto; 
+        overflow: hidden;
+    }
+    h1 {
+        font-size: 40px;
+        padding-top: 200px;
+        margin: 0;
+        text-align: left;
+    }
+    /* NAV */
+    .hide {
+        display:contents;
+        height: 1px;
+    }
+
+    #nav2 img {
+       width: 50px;
+    }
+    
+    nav li {
+        list-style: none;
+        padding-left: 0;
+        text-align: center;
+     }
+     .btnwrap {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        width: 300px;
+        position: fixed;
+        top: 0;
+    
+     }
+    #nav1 {
+        margin: 0;
+        padding-left: 0;
+        display: grid;
+        grid-template-columns: .25fr 1fr .25fr;
+        width: 768px;
+        text-align: center;
+    }
+    #nav2{
+        margin: 0;
+        padding-left: 5px;
+        padding-top: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        text-align: center;
+    }
+    menu li {
+        list-style: none;
+    }
+#menuicon {
+       display: none;
+    }
+    
+#homeicon {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+.btnwrap {
+        margin: 0;
+        padding: 10px 50px 0px 320px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+#profileicon {
+        grid-column-start: 3;
+        grid-column-end: 4;
+ 
+    }
+#breakfast {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+#brunch {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+}
+#lunch {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+#dinner {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+#appetizers {
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+#desserts {
+    grid-column-start: 6;
+    grid-column-end: 7;
+}
+#beverages {
+    grid-column-start: 7;
+    grid-column-end: 8;
+}
+
+menu {
+background:rgba(255, 255, 255, .5);
+position: relative;
+z-index: 1;
+
+
+}
+/* ARTICLE */
+#tacosimg {
+    width: 768px;
+    height: auto; 
+    position: relative;
+    top: -95px;
+}
+
+#ingredients {
+    width: 150px;
+    position: relative;
+    float: left;
+}
+#directions {
+    width:500px;
+    margin-left: 200px;
+
+}
+/* ASIDE */
+aside {
+        background-color: #7ABFBF;
+        padding-bottom: 10px;
+        clear: both;
+    }
+    
+aside h2 {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        height: 50px;
+        width: 768px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+#dish12, #dish34 {
+        width: 768px;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+}
+.dish1, .dish3 {
+    width: 380px;
+    margin: 0;
+    padding: 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.dish2, .dish4 {
+    width: 380px;
+    margin: 0;
+    padding: 0;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+}
+
+@media (min-width: 1280px) {
+    #wrapper {
+        background-color: #fff; 
+        width: 1280px;
+        margin: 0 auto; 
+        overflow: hidden; 
+    }
+    h1 {
+        text-align: center;
+    }
+
+/* NAV */
+.btnwrap {
+    width: 300px;
+    position: fixed;
+    top: 0;
+    padding-left: 450px;
+ }
+
+header {
+    margin: 0;
+    padding-left: 0;
+    width: 1280px;
+    text-align: center;
+}
+
+#nav1 {
+    margin: 0;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1280px;
+    text-align: center;
+}
+
+#homeicon {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#profileicon {
+    grid-column-start: 9;
+    grid-column-end: 10;
+}
+#nav2{
+    margin: 0;
+    padding-left: 5px;
+    padding-top: 5px;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+#breakfast {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+}
+
+#brunch {
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+}
+#lunch {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+#dinner {
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+#appetizers {
+    grid-column-start: 6;
+    grid-column-end: 7;
+}
+#desserts {
+    grid-column-start: 7;
+    grid-column-end: 8;
+}
+#beverages {
+    grid-column-start: 7;
+    grid-column-end: 8;
+}
+
+#action {
+    display: grid;
+    width: 100px;
+    height: 500px;
+    grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+    list-style: none;
+    float: left;
+}
+
+.save {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.share {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.print {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.jump {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+#details {
+    background-color: #0D0D0D;
+color:#7ABFBF;
+clear: both;
+}
+#directions {
+    width: 800px;
+}
+#directions li{
+    padding: 10px;
+}
+#details dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+    #tacosimg {
+        width: 500px;
+        padding-top: 100px;
+        height: auto;  
+        float: left;
+    }
+aside {
+    justify-content: center;
+}
+
+footer img {
+    float: left;
+}
+
+}
+
+@media print {
+    body {
+        font-family: serif;
+    }
+    section {
+        margin: 0.5in;
+    }
+    p, li, dd {
+        font-size: 12px;
+    }
+    nav, img, svg, #action {
+        display: none;
+    }
+    #details {
+        display: inline;
+    }
+    #directions {
+        float: right;
+    }
+    
+}
